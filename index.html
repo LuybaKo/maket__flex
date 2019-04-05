@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- Optional - Adds useful class to manipulate icon font display -->
+    <link rel="stylesheet" href="fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>BOOSTFOLIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <!-- Шапка сайта с логотипом и бургер-меню -->
+            <div class="navigation">
+                <div class="navigation__slogan">
+                    <img src="img/icon-navigation-rocets.png" alt="логотип">
+                    <p class="navigation__slogan-title">boostfolia</p>
+                </div>
+                <div class="navigation__wrapper-menu">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu"></label>
+                    <div class="burger-line firstlineBurger"></div>
+                    <div class="burger-line secondlineBurger"></div>
+                    <div class="burger-line thirdlineBurger"></div>
+                    <div class="burger-line fourthlineBurger"></div>
+                    <nav class="main-menu">
+                        <a class="main-menu__item" href="#about-us">About Us</a>
+                        <a class="main-menu__item" href="#our-works">Our Works</a>
+                        <a class="main-menu__item" href="#who-we-are">Who We Are</a>
+                        <a class="main-menu__item" href="#blog-post">Blog Post</a>
+                        <a class="main-menu__item" href="#get-in-touch">Get In Touch</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция слайдер -->
+    <section class="slider">
+        <div class="container">
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width slides -->
+                <div class="mySlides">
+                    <h1 class="slider__title">WE THINK CREATIVE BE CREATIVE</h1>
+                    <p class="slider__subtitle">LIKE TO DO CREATIVE WORKS</p>
+                </div>
+                <div class="mySlides">
+                    <h1 class="slider__title">SLIDE 2</h1>
+                    <p class="slider__subtitle">LIKE TO DO CREATIVE WORKS</p>
+                </div>
+                <div class="mySlides">
+                    <h1 class="slider__title">SLIDE 3</h1>
+                    <p class="slider__subtitle">LIKE to DO CREATIVE WORKS</p>
+                </div>
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slider__scroll">
+                <a href="#">
+                    <img src="img/scroll.png" alt="смотри ниже">
+                </a>
+                <div class="slider__scroll-text">SCROLL DOWN</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION-->
+    <section class="about-us">
+        <div class="container">
+
+            <!-- UNIVERSAL title with paragraph -->
+            <div class="about-us__title  section-title">
+                <h2 id="about-us" class="title-main">ABOUT US</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <!-- blocks portfolio with works -->
+            <div class="about-us__works">
+                <div class="works-design">
+                    <div class="works-icon">
+                        <img src="img/about-us-valik.png" alt="icon">
+                    </div>
+                    <div class="works-title">CREATIVE DESIGN</div>
+                    <div class="works-text">Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .
+                    </div>
+                </div>
+                <div class="works-portfolio">
+                    <div class="works-icon">
+                        <img src="img/about-us-bag.png" alt="icon">
+                    </div>
+                    <div class="works-title">UNIQU PORTFOLIO</div>
+                    <div class="works-text">Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .
+                    </div>
+                </div>
+                <div class="works-infinite">
+                    <div class="works-icon">
+                        <img src="img/about-us-infinity.png" alt="icon">
+                    </div>
+                    <div class="works-title">INFINITE UPDATES</div>
+                    <div class="works-text">Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION GAME and VIDEO -->
+    <section style="background-color: #000000;">
+        <div class="container">
+            <div class="media">
+                <div class="media__play">
+                    <div class="media__play-title">WATCH BEHIND THE SCENE</div>
+                    <p class="media__play-text">Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                    <!-- UNIVERSAL TYPE OF BUTTON -->
+                    <button class="media__play-btn  button">play now</button>
+                </div>
+                <!-- VIDEO -->
+                <div class="media__video">
+                    <video width="100%" height="100%" poster="img/video-poster.png" controls>
+                        <source src="video/video-382516a87f4b7581060f4b7dcaf6b80e-V.mp4"
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORKS SECTION -->
+    <section>
+        <div class="container">
+            <div class="our-works">
+                <div class="our-works__title  section-title">
+                    <h2 id="our-works" class="title-main">our works</h2>
+                    <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="our-works__navigation">
+                    <a class="navigation-item" href="#">ALL PROJECTS</a>
+                    <a class="navigation-item" href="#">PHOTOGRAPHY</a>
+                    <a class="navigation-item" href="#">WEB DESIGN</a>
+                    <a class="navigation-item" href="#">BRANDING</a>
+                    <a class="navigation-item" href="#">MOBILE APP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RED SECTION -->
+    <section class="red-section" style="background-color:#ff0000">
+        <div class="container">
+            <div class="red-section__line">
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="red-section__work"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVIGATION SLIDER -->
+    <section class="navigation-slider">
+        <div class="container">
+            <div class="navigation-slider__slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <!-- slider 1 -->
+                <div class="navigation-slider__mySlides">
+                    <div class="navigation-slider__first-slider">
+                        <div class="navigation-slider__title">
+                            <img src="img/icon-for-slide-firstr.png" alt="icon" class="icon-for-slider">
+                            <p>themeforest</p>
+                        </div>
+                        <div class="navigation-slider__title">
+                            <img src="img/icon-for-slider-second.png" alt="icon" class="icon-for-slider">
+                            <p>graphicriver</p>
+                        </div>
+                        <div class="navigation-slider__title">
+                            <img src="img/icon-for-slider-third.png" alt="icon" class="icon-for-slider">
+                            <p>videohive</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div class="navigation-slider__mySlides">
+                    <div class="navigation-slider__first-slider">
+                        <p>slider2</p>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div class="navigation-slider__mySlides">
+                    <div class="navigation-slider__first-slider">
+                        <p>slider3</p>
+                    </div>
+                </div>
+                <!-- Next/prev buttons -->
+                <a class="prev  prev-for-slider2" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next  next-for-slider2" onclick="plusSlides2(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="who-we-are">
+        <div class="container">
+            <!-- UNIVERSAL title and paragraph -->
+            <div class="who-we-are__title  section-title">
+                <h2 id="who-we-are" class="title-main">who we are</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <!-- column with foto and name -->
+            <div class="who-we-are__introduction">
+                <div class="person">
+                    <div class="person__foto"></div>
+                    <div class="person__fio">JANE SMITH</div>
+                    <div class="person__profession">DESIGNER</div>
+                    <div class="person__social-icons">
+                        <a href="#" target="_blank"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <!-- column with skills diagramm -->
+                <div class="my-skills">
+                    <div class="my-skills__title">MY SKILLS</div>
+                    <div class="my-skills__text title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor.</div>
+                    <div class="my-skills__diagramms">
+                        <div class="diagramms-item">
+                            <div class="name-of-item">PHOTOSHOP</div>
+                            <div class="name-of-item">ILLUSTRATOR</div>
+                            <div class="name-of-item">SKETCH</div>
+                            <div class="name-of-item">AFTER EFFECTS</div>
+                        </div>
+                        <div class="diagramms-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="diagramms-percents">
+                            <div class="percents">88%</div>
+                            <div class="percents">92%</div>
+                            <div class="percents">90%</div>
+                            <div class="percents">98%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOME FEATURES SECTION -->
+    <section class="some-features">
+        <div class="container">
+            <div class="some-features__title">SOME FEATURES</div>
+            <div class="some-features__directions">
+                <div class="some-features__directions-order">
+                    <div class="directions-order__icon">
+                        <a href="#" target="_blank">
+                            <i class="pe-7s-monitor  some-features-icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="directions-order__title">Shortcodes</div>
+                    <div class="directions-order__number">46</div>
+                </div>
+                <div class="some-features__directions-order">
+                    <div class="directions-order__icon">
+                        <a href="#" target="_blank"><i class="pe-7s-settings  some-features-icon"></i></a>
+                    </div>
+                    <div class="directions-order__title">Integrated Plugins</div>
+                    <div class="directions-order__number">128</div>
+                </div>
+                <div class="some-features__directions-order">
+                    <div class="directions-order__icon">
+                        <a href="#" target="_blank"><i class="pe-7s-shopbag  some-features-icon"></i></a>
+                    </div>
+                    <div class="directions-order__title">Creative Products</div>
+                    <div class="directions-order__number">450</div>
+                </div>
+                <div class="some-features__directions-order">
+                    <div class="directions-order__icon">
+                        <a href="#" target="_blank"><i class="pe-7s-medal  some-features-icon"></i></a>
+                    </div>
+                    <div class="directions-order__title">Clients Worldwide</div>
+                    <div class="directions-order__number">1000+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----BLOG POST SECTION---- -->
+    <section class="blog-post">
+        <div class="container">
+            <!-- UNIVERSAL title and paragraph -->
+            <div class="blog-post__title  section-title">
+                <h2 id="blog-post" class="title-main">blog post</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <!-- section with pictures and post  3 blocks-->
+            <div class="blog-post__blogs">
+                <div class="blog">
+                    <div class="blog__img">
+                        <!-- кнопки - ссылки внутри картинок -->
+                        <div class="blog__img-social"><i class="pe-7s-link  danger"></i></div>
+                        <div class="blog__img-social"><i class="pe-7s-look  danger"></i></div>
+                    </div>
+                    <!-- text and likes -->
+                    <div class="blog__title">creat creative &#38; Clean</div>
+                    <div class="blog__text">Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do
+                        eiusmod<br>
+                        tempor incididunt ut labore et dolore<br> magna aliqua</div>
+                    <div class="blog__feedbacks">
+                        <div class="blog__feedbacks-data"><span><i class="pe-7s-angle-right-circle"></i></span>25 Jan
+                            2015</div>
+                        <div class="blog__feedbacks-likes"><span><i class="pe-7s-like2"></i>25</span><span><i
+                                    class="pe-7s-comment"></i>11</span></div>
+                    </div>
+                </div>
+                <div class="blog">
+
+                    <div class="blog__img">
+                        <!-- кнопки - ссылки внутри картинок -->
+                        <div class="blog__img-social"><i class="pe-7s-link  danger"></i></div>
+                        <div class="blog__img-social"><i class="pe-7s-look  danger"></i></div>
+                    </div>
+                    <!-- text and likes -->
+                    <div class="blog__title">Make A Sleek Break</div>
+                    <div class="blog__text">Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do
+                        eiusmod<br>
+                        tempor incididunt ut labore et dolore<br> magna aliqua</div>
+                    <div class="blog__feedbacks">
+                        <div class="blog__feedbacks-data"><span><i class="pe-7s-angle-right-circle"></i></span>25 Jan
+                            2015</div>
+                        <div class="blog__feedbacks-likes"><span><i class="pe-7s-like2"></i>25</span><span><i
+                                    class="pe-7s-comment"></i>11</span></div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__img">
+                        <!-- кнопки - ссылки внутри картинок -->
+                        <div class="blog__img-social"><i class="pe-7s-link  danger"></i></div>
+                        <div class="blog__img-social"><i class="pe-7s-look  danger"></i></div>
+                    </div>
+                    <!-- text and likes -->
+                    <div class="blog__title">Creative Manipulations</div>
+                    <div class="blog__text">Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do
+                        eiusmod<br>
+                        tempor incididunt ut labore et dolore<br> magna aliqua</div>
+                    <div class="blog__feedbacks">
+                        <div class="blog__feedbacks-data"> <span><i class="pe-7s-angle-right-circle"></i></span> 25 Jan
+                            2015</div>
+                        <div class="blog__feedbacks-likes"> <span><i class="pe-7s-like2"></i>25</span><span><i
+                                    class="pe-7s-comment"></i>11</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHOSE PLAN SECTION -->
+    <section class="chose-plan">
+        <div class="container">
+            <div class="chose-plan__title">chose plan</div>
+            <!-- start first block -->
+            <div class="chose-plan__order">
+                <div class="choose-plan__order-block">
+                    <div class="order-block__section">
+                        <div class="order-block__section-level">basic</div>
+                        <div class="order-block__section-prise">Free</div>
+                    </div>
+                    <div class="order-block__content">
+                        <div class="order-block__content-item">
+                            <span class="number">20</span>
+                            <span class="item-of-content">Pages</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">2</span>
+                            <span class="item-of-content">GB Storage</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">150</span>
+                            <span class="item-of-content">Members</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">2</span>
+                            <span class="item-of-content">Contributors</span>
+                        </div>
+                    </div>
+                    <!-- UNIVERSAL TYPE OF BUTTON -->
+                    <button class="media__play-btn  button">purchase</button>
+                </div>
+                <!-- end first block -->
+                <!-- start second block -->
+                <div class="choose-plan__order-block">
+                    <div class="order-block__section">
+                        <div class="order-block__section-level">standart</div>
+                        <div class="order-block__section-prise">&#36;24.00</div>
+                    </div>
+                    <div class="order-block__content">
+                        <div class="order-block__content-item">
+                            <span class="number">25</span>
+                            <span class="item-of-content">Pages</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">10</span>
+                            <span class="item-of-content">GB Storage</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">300</span>
+                            <span class="item-of-content">Members</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">5</span>
+                            <span class="item-of-content">Contributors</span>
+                        </div>
+                    </div>
+                    <!-- UNIVERSAL TYPE OF BUTTON -->
+                    <button class="media__play-btn  button">purchase</button>
+                </div>
+                <!-- start third block -->
+                <div class="choose-plan__order-block">
+                    <div class="order-block__section">
+                        <div class="order-block__section-level">Premium</div>
+                        <div class="order-block__section-prise">&#36;40.00</div>
+                    </div>
+                    <div class="order-block__content">
+                        <div class="order-block__content-item">
+                            <span class="number">20</span>
+                            <span class="item-of-content">Pages</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">20</span>
+                            <span class="item-of-content">GB Storage</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">500</span>
+                            <span class="item-of-content">Members</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">10</span>
+                            <span class="item-of-content">Contributors</span>
+                        </div>
+                    </div>
+                    <!-- UNIVERSAL TYPE OF BUTTON -->
+                    <button class="media__play-btn  button">purchase</button>
+                </div>
+                <!-- start fourth block -->
+                <div class="choose-plan__order-block">
+                    <div class="order-block__section">
+                        <div class="order-block__section-level">professional</div>
+                        <div class="order-block__section-prise">&#36;75.00</div>
+                    </div>
+                    <div class="order-block__content">
+                        <div class="order-block__content-item">
+                            <span class="number">40</span>
+                            <span class="item-of-content">Pages</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">40</span>
+                            <span class="item-of-content">GB Storage</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">1000</span>
+                            <span class="item-of-content">Members</span>
+                        </div>
+                        <div class="order-block__content-item">
+                            <span class="number">20</span>
+                            <span class="item-of-content">Contributors</span>
+                        </div>
+                    </div>
+                    <!-- UNIVERSAL TYPE OF BUTTON -->
+                    <button class="media__play-btn  button">purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ GET IN TOUCH SECTION --------------->
+    <section class="get-in-touch">
+        <div class="container">
+            <!-- UNIVERSAL title and paragraph -->
+            <div class="blog-post__title  section-title">
+                <h2 id="get-in-touch" class="title-main">get in touch</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <!-- form -->
+            <form class="get-in-touch__form" action="">
+                <div class="form__name-and-mail">
+                    <div class="form__name">
+                        <label class="form-label required" for="username" for="name">name</label>
+                        <input id="username" type="text" name="name" autocomplete="off" maxlength="30" required>
+                    </div>
+                    <div class="form__mail">
+                        <label class="form-label required" for="usermail">mail</label>
+                        <input id="usermail" type="text" name="mail" autocomplete="off" maxlength="50" required>
+                    </div>
+                </div>
+                <div class="form__message">
+                    <label class="form-label required" for="usermessage">message</label>
+                    <textarea id="usermessage" rows="3" name="message" required></textarea>
+                </div>
+                <!-- UNIVERSAL TYPE OF BUTTON -->
+                <button class="get-in-touch__form-btn  button">send MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!------------ FOOTER ----------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__location">
+                <div class="footer__location-title">LOCATE ON map</div>
+                <i class="pe-7s-angle-down  some-features-icon map"></i>
+            </div>
+            <iframe class="footer__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.1275948179627!2d27.542518215306092!3d53.89393604125479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe702bf6b1d%3A0xa9e60e791be651c2!2z0L_RgNC-0YHQv9C10LrRgiDQndC10LfQsNCy0LjRgdC40LzQvtGB0YLQuCAxLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1553608405116"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="footer__slogan">
+                <i class="pe-7s-rocket  some-features-icon"></i>
+                <div class="footer__slogan-title">BOOSTFOLIA</div>
+            </div>
+            <div class="footer__developer">MADE WITH LOVE BY CREATIVEPRODUCT</div>
+            <div class="footer__social-icons">
+                <a href="#" target="_blank"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
