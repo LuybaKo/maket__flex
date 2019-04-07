@@ -992,12 +992,12 @@ body {
         padding-bottom: 0;
     }
 
-    .some-features__directions-order {
-        padding: 0px 45px 40px;
+    .some-features__directions{
+        flex-direction: column;
     }
 
-    .some-features__directions-order .directions-order__title {
-        margin: 15px 0;
+    .some-features__directions-order {
+        padding-bottom: 60px;
     }
 
     .directions-order__number {
@@ -1043,9 +1043,9 @@ body {
     }
 }
 
-@media (min-width: 490px) and (max-width: 620px) {
+@media (min-width: 490px) and (max-width: 660px) {
     .navigation-item {
-        margin: 0 30px;
+        margin: 0 40px;
     }
 }
 
@@ -1053,7 +1053,7 @@ body {
 
     .footer__map {
         width: 500px;
-        height: auto;
+        height: 500px;
     }
 }
 
@@ -1071,6 +1071,10 @@ body {
 
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
+    /* Header */
+    .navigation {
+        height: 90px;
+    }
     .slider__title {
         font-size: 48px;
     }
@@ -1092,6 +1096,29 @@ body {
     .works {
         padding-bottom: 30px;
     }
+    /* Navigation Slider */
+    .navigation-slider__first-slider{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-slider__title:nth-child(2){
+        margin-left: -15px;
+    }
+
+    .navigation-slider__title:last-child{
+        margin-left: -26px;
+    }
+
+    .navigation-slider__title:nth-child(2) .icon-for-slider{
+        width: 55px;
+        height: 55px;
+    }
+
+    /* WHO WE ARW SECTION */
+    .who-we-are__introduction {
+        margin-bottom: 40px;
+    }
 
     /* FORM */
     .form__name-and-mail {
@@ -1105,6 +1132,13 @@ body {
 
     .form__mail {
         width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .blog-post__blogs{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1139,7 +1173,7 @@ body {
     .next-for-slider2 {
         padding-right: 15px;
     }
-
+    
     /* BLOG POST */
     .blog__title {
         margin-top: 15px;
@@ -1154,4 +1188,9 @@ body {
         margin-bottom: 40px;
     }
 
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+    .red-section__work {
+        margin: 20px 75px;
+    }
 }
