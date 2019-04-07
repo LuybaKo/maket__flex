@@ -245,11 +245,11 @@ body {
 }
 
 /* scroll */
-.slider__scroll {
+.scroll {
     text-align: center;
 }
 
-.slider__scroll-text {
+.scroll__text {
     font-size: 12px;
     line-height: 1;
     text-transform: uppercase;
@@ -259,24 +259,25 @@ body {
 /* ------------------------------------------------------------ */
 .about-us,
 .our-works,
-.who-we-are__title {
+.who-we-are,
+.get-in-touch {
     text-align: center;
 }
 
-.section-title {
+.g--title {
     margin: 90px 0;
     font-family: "BigNoodleTitling", sans-serif;
     text-transform: uppercase;
 }
 
-.title-main {
+.g--title__head {
     display: inline-block;
     margin: 0;
     font-size: 48px;
     border-bottom: 1px solid #ff0000;
 }
 
-.title-text {
+.g--title__paragraph {
     max-width: 650px;
     margin: 25px auto 0;
     font-family: "Roboto Th", sans-serif;
@@ -310,21 +311,21 @@ body {
     flex-wrap: wrap;
 }
 
-.media__play {
+.play {
     width: 650px;
     margin: 0 auto;
     padding: 120px 90px 100px 90px;
     text-align: center;
 }
 
-.media__play-title {
+.play__title {
     font-family: "MyriadProRegular", sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-size: 30px;
 }
 
-.media__play-text {
+.play__text {
     font-size: 14px;
     color: #4e4e4e;
     margin-top: 20px;
@@ -332,7 +333,7 @@ body {
 }
 
 /* Universal style for button */
-.button {
+.g--button {
     padding: 15px 25px;
     font-size: 14px;
     font-weight: bold;
@@ -344,7 +345,7 @@ body {
     cursor: pointer;
 }
 
-.media__video {
+.video {
     width: 650px;
     margin: 0 auto;
 }
@@ -634,7 +635,7 @@ body {
     padding-bottom: 135px;
 }
 
-.blog-post__title {
+.blog-post .g--title {
     text-align: center;
 }
 
@@ -884,7 +885,7 @@ body {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
 
-    .media__play-title,
+    .play__title,
     .some-features__title,
     .chose-plan__title {
         font-size: 24px;
@@ -923,21 +924,21 @@ body {
     }
 
     /* ABOUT US SECTION */
-    .title-main {
+    .g--title__head {
         font-size: 32px;
     }
 
-    .title-text {
+    .g--title__paragraph {
         width: 100%;
     }
 
     /* MEDIA SECTION */
-    .media__play {
+    .play {
         width: 100%;
         padding: 40px 0px;
     }
 
-    .media__video {
+    .video {
         width: 100%;
     }
 
@@ -1150,7 +1151,7 @@ body {
     }
 
     /* GAME AND VIDEO SECTION */
-    .media__play {
+    .play {
         padding: 90px 0px 10px 0px;
     }
 
