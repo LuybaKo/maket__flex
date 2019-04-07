@@ -283,7 +283,7 @@ body {
     font-size: 14px;
 }
 
-.about-us__works {
+.works {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -291,14 +291,14 @@ body {
     padding-bottom: 140px;
 }
 
-.works-title {
+.works-block__title {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 17.89px;
     text-transform: uppercase;
 }
 
-.works-text {
+.works-block__text {
     font-family: "Roboto Th", sans-serif;
     font-size: 14px;
 }
@@ -931,19 +931,6 @@ body {
         width: 100%;
     }
 
-    .section-title {
-        margin: 30px 0;
-    }
-
-    .works-design,
-    .works-portfolio {
-        margin-bottom: 30px;
-    }
-
-    .about-us__works {
-        padding-bottom: 30px;
-    }
-
     /* MEDIA SECTION */
     .media__play {
         width: 100%;
@@ -1055,11 +1042,13 @@ body {
         top: -14px;
     }
 }
+
 @media (min-width: 490px) and (max-width: 620px) {
-    .navigation-item{
+    .navigation-item {
         margin: 0 30px;
     }
 }
+
 @media (min-width: 576px) and (max-width: 736px) {
 
     .footer__map {
@@ -1084,6 +1073,24 @@ body {
 @media (max-width: 768px) {
     .slider__title {
         font-size: 48px;
+    }
+
+    /* About US */
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works-block {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        margin: 30px 0;
+    }
+
+    .works {
+        padding-bottom: 30px;
     }
 
     /* FORM */
